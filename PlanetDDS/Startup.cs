@@ -4,8 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using PlanetDDS.Models.Dentist;
-using PlanetDDS.Models.Patient;
+using PlanetDDS.Models;
 
 namespace PlanetDDS
 {
@@ -22,11 +21,8 @@ namespace PlanetDDS
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<DentistContext>(options =>
+            services.AddDbContext<PracticeContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("Plant_DDS")));
-            services.AddDbContext<PatientContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("Plant_DDS")));
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

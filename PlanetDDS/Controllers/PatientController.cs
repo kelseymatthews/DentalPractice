@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using PlanetDDS.Models.Patient;
+using PlanetDDS.Models;
 
 namespace PlanetDDS.Controllers
 {
@@ -9,9 +9,9 @@ namespace PlanetDDS.Controllers
     [Route("patient")]
     public class PatientController : ControllerBase
     {
-        private readonly PatientContext _context;
+        private readonly PracticeContext _context;
 
-        public PatientController(PatientContext context)
+        public PatientController(PracticeContext context)
         {
             _context = context;
         }

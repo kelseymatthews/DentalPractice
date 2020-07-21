@@ -1,6 +1,6 @@
 ﻿
 
-namespace PlanetDDS.Models.Patient
+namespace PlanetDDS.Models
 {
     public class Patient
     {

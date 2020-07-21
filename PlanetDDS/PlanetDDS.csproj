@@ -7,8 +7,6 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Models\Patient\" />
-    <Folder Include="Models\Dentist\" />
     <Folder Include="wwwroot\" />
     <Folder Include="wwwroot\lib\" />
   </ItemGroup>
