@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Planet_DDS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="text-center">
+    <h1>Dental Practice Information</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Patients</h2>
+                <form action="javascript:void(0);" method="GET" onsubmit="getPatients()">
+                    <button type="submit" class="btn btn-outline-dark"> Get All Patients </button>
+                </form>
+                <div id="patients" class="text-left" style="word-wrap:break-word"></div>
+            </div>
+            <div class="col-md-6">
+                <h2>Dentists</h2>
+                <form action="javascript:void(0);" method="GET" onsubmit="getDentists()">
+                    <button type="submit" class="btn btn-outline-dark"> Get All Dentists </button>
+                </form>
+                <div id="dentists" class="text-left" style="word-wrap:break-word"></div>
+            </div>
+        </div>
+    </div>
+    <script src="site.js" asp-append-version="true"></script>
+</body>
+</html>
